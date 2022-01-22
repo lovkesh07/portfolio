@@ -4,19 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Portfolio Website</title>
+  <title>Lovkesh Patel</title>
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/preloader.css" />
 </head>
 
 <body>
+<!-- 
+  <div id="loader-wrapper">
+    <div id="loader"></div>
+  </div> -->
+
   <main>
     <header id="header">
 
-
       <nav>
-        <div class="container" id="navbar">
+        <div class="container" id="navbar" 
+        data-aos="fade-up"
+        data-aos-duration="3000">
           <div class="logo" id="logo1">
             <h1 class="luv">Lovkesh Patel</h1>
           </div>
@@ -41,21 +50,26 @@
         </div>
       </nav>
 
-      <div class="header-content">
+      <div class="header-content" data-aos="flip-up">
         <div class="container grid-2">
           <div class="column-1">
-            <h1 class="header-title">Lovkesh Patel</h1>
+            <h1 class="header-title"  data-aos="fade-right"
+            data-aos-offset="300"  data-aos-duration="2000"
+            data-aos-easing="ease-in-sine">Lovkesh Patel</h1>
             <p class="text">
               An enthusiastic guy looking to work in a firm with a professional work
               Driven environment where I can utilize and apply my knowledge, skills which would enable me to grow
               fulfilling organizational goals.
 
             </p>
-            <a href="#skill" class="btn">SKILLs</a>
-            <a href="#" class="btn">Hobbies</a>
+            <a href="#skill" class="btn" data-aos="zoom-out-up"  data-aos-duration="2000">SKILLs</a>
+            <a href="#" class="btn" data-aos="zoom-out-right"  data-aos-duration="2000">Hobbies</a>
           </div>
 
-          <div class="column-2 image">
+          <div class="column-2 image" 
+           data-aos="fade-down-left"
+           data-aos-duration="1000"
+              >
             <!-- <img
                 src="./img/shapes/points2.png"
                 class="points points2"
@@ -76,7 +90,7 @@
     <!-- ---------------------------------------------------------------------------- -->
 
 
-    <section class="portfolio section" id="portfolio">
+    <section class="portfolio section" id="portfolio"  data-aos="zoom-out" data-aos-duration="3000">
       <div class="background-bg">
         <!--  -->
       </div>
@@ -99,7 +113,7 @@
     <section class="about section" id="skill">
       <div class="container">
         <div class="section-header">
-          <h3 class="title" data-title="What I Know">SKILLS</h3>
+          <h3 class="title" data-title="What All I Know">SKILLS</h3>
         </div>
 
         <div class="section-body grid-2">
@@ -147,7 +161,9 @@
 
           </div>
 
-          <div class="column-2 image">
+          <div class="column-2 image" 
+          data-aos="zoom-in-up" 
+          data-aos-duration="3000">
             
             <img src="./img/img222.jpeg" class="z-index" alt="" />
           </div>
@@ -158,14 +174,14 @@
 
     <section class="hireme" id="hireme">
       <div class="container">
-        <h3 class="title">Let's talk about a project</h3>
+        <h3 class="titlehobb">Let's talk about a project</h3>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
           culpa. Commodi suscipit animi officia dignissimos unde, ipsum fugiat
           consequuntur, fugit ratione vel aperiam, similique distinctio
           mollitia repellendus quasi rem vero!
         </p>
-        <a href="#" class="btn">Hire me</a>
+        <!-- <a href="#" class="btn">Hire me</a> -->
       </div>
     </section>
   </main>
@@ -202,29 +218,10 @@
           </ul>
         </div>
 
-        <div class="grid-4-col footer-links">
-          <h3 class="title-sm">Services</h3>
-          <ul>
-            <li>
-              <a href="#">Web Design</a>
-            </li>
-            <li>
-              <a href="#">Web Dev</a>
-            </li>
-            <li>
-              <a href="#">App Design</a>
-            </li>
-            <li>
-              <a href="#">Marketing</a>
-            </li>
-            <li>
-              <a href="#">UI Design</a>
-            </li>
-          </ul>
-        </div>
+       
 
         <div class="grid-4-col footer-newstletter">
-          <h3 class="title-sm">Subscribe</h3>
+          <h3 class="title-sm">Contact-Me</h3>
           <p class="text">
             Lorem ipsum dolor, sit amet ipsum dolor sit amet.
           </p>
@@ -240,8 +237,8 @@
       <div class="bottom-footer">
         <div class="copyright">
           <p class="text">
-            Copyright&copy;2020 All rights reserved | Made by
-            <span>True Coder</span>
+            Copyright&copy;2022 All rights reserved | Made by
+            <span>Lovkesh Patel</span>
           </p>
         </div>
 
@@ -279,6 +276,12 @@
   <script src="./js/isotope.pkgd.min.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/app.js"></script>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+
 </body>
 
 </html>

@@ -114,3 +114,14 @@ function scrollFunction() {
     document.getElementById("logo1").style.padding = "20px 40px";
   }
 }
+
+
+
+
+var overlay = document.getElementById("loader-wrapper");
+
+window.addEventListener("load", function () {
+  setTimeout(function () {
+    overlay.style.display = "none";
+  }, 1000);
+});
