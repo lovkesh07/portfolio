@@ -4,10 +4,10 @@
 :root {
   --dark-one: #333;
   --dark-two: #7a7a7a;
-  --main-color: #784cfb;
-  --light-one: #fff;
+  --main-color: #69df1b;
+  /* --light-one: #fff;
   --light-two: #f9fafb;
-  --light-three: #f6f7fb;
+  --light-three: #f6f7fb; */
 }
 
 
@@ -261,7 +261,7 @@ nav .container {
   height: 6rem;
   align-items: center;
   background-color: rgb(223, 194, 194);
-  border-radius:90px;
+  border-radius:30px;
 
   /* box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px; */
 
@@ -1238,7 +1238,8 @@ nav.open .links {
   }
 }
 
-@media (max-width: 850px) {
+@media (max-width: 700px) {
+ 
   .grid-2 {
     grid-template-columns: 1fr !important;
   }
@@ -1307,50 +1308,6 @@ nav.open .links {
     min-height: 80vh;
   }
 
-  .letters,
-  header .half-circle2,
-  header .points1,
-  header .wave2 {
-    display: none;
-  }
-
-  header .half-circle1 {
-    bottom: 55%;
-    left: 23%;
-  }
-
-  header .circle {
-    left: 8%;
-    bottom: 40%;
-  }
-
-  header .wave1 {
-    bottom: 87%;
-    left: 75%;
-  }
-
-  header .square {
-    top: initial;
-    bottom: 5%;
-    left: 13%;
-  }
-
-  header .triangle {
-    right: 14%;
-    bottom: 63%;
-  }
-
-  header .points2 {
-    width: 280px;
-    bottom: -10px;
-    left: 60%;
-  }
-
-  header .xshape {
-    left: 90%;
-    top: 54%;
-  }
-
   .grid-item {
     width: 50%;
   }
@@ -1364,28 +1321,6 @@ nav.open .links {
     height: 340px;
   }
 
-  .portfolio .half-circle1,
-  .portfolio .triangle,
-  .portfolio .half-circle2 {
-    display: none;
-  }
-
-  .portfolio .square {
-    top: 10%;
-    left: 14%;
-  }
-
-  .portfolio .wave {
-    top: 33%;
-  }
-
-  .portfolio .circle {
-    right: 20%;
-  }
-
-  .portfolio .xshape {
-    top: 25%;
-  }
 
   .skill-bar {
     width: 100%;
@@ -1520,6 +1455,7 @@ nav.open .links {
 }
 
 @media (max-width: 600px) {
+  
   .grid-item {
     width: 100%;
   }
