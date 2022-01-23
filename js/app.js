@@ -117,6 +117,7 @@ function scrollFunction() {
 
 
 
+// preloader
 
 var overlay = document.getElementById("loader-wrapper");
 
