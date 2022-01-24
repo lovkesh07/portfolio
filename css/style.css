@@ -820,6 +820,59 @@ nav.open .links {
 
 
 
+.containerhobby{
+    width: 100%;
+    height: 100vh;
+    padding: 0 8%;
+    margin-bottom: 80px;
+    box-sizing: border-box;
+}
+
+
+.rowhobby{
+    display: grid;grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-gap: 30px;
+    padding: 50px;
+}
+.service{
+    text-align: center;
+    padding:25px 10px;
+    border-radius:5px;
+    font-size:14px;
+    cursor:pointer;
+    background:transparent;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+.service i{
+    font-size: 90px;
+    margin-bottom:10px;
+    color:rgb(8, 8, 8);
+}
+.service h2{
+    font-weight:600;
+    /* margin-bottom:8px; */
+    text-transform: uppercase;
+}
+.service:hover{
+    /* background:#303ef7; */
+    color:rgb(228, 37, 37);
+}
+
+@media (max-width: 1280px) {
+
+    .rowhobby{
+        
+        padding: 10px;
+    }
+    .service i{
+        font-size: 30px;
+        margin-bottom:10px;
+        color:rgb(8, 8, 8);
+    }
+}
+
+
 
 
 
