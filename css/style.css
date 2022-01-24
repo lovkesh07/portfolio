@@ -295,7 +295,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .links a.active {
   background-color:#69df1b;
-  color: var(--light-one);
+  /* color: var(--light-one); */
   border-radius: 2rem;
   font-size: 8rem;
   padding: 0.9rem 2.1rem;
@@ -305,7 +305,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 .links a:hover {
   /* color:#69df1b; */
   color:rgb(255, 255, 255);
-  background-color:rgb(231, 26, 163);
+  /* background-color:rgb(231, 26, 163); */
   background: linear-gradient(30deg,yellow,red);
   border-radius:20px;
   border-style: solid;
@@ -324,6 +324,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   width: 2.7rem;
   height: 3rem;
   z-index: 100;
+  cursor: pointer;
   position: relative;
   display: none;
   align-items: center;
@@ -337,6 +338,7 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
   border-radius: 3px;
   /* background-color: var(--dark-one); */
   background-color:white ;
+  
   transition: 0.5s;
 }
 
@@ -353,15 +355,18 @@ border: 1px solid rgba( 255, 255, 255, 0.18 );
 
 .bar:before {
   transform: translateY(-9px);
+  
 }
 
 .bar:after {
   transform: translateY(9px);
+  
 }
 
 nav.open .hamburger-menu .bar {
   background-color: transparent;
   transform: rotate(360deg);
+  
 }
 
 nav.open .hamburger-menu .bar:before {
@@ -871,31 +876,7 @@ nav.open .links {
     margin-left: 1rem;
   }
 
-  .overlay.overlay-lg .shape {
-    height: 35px;
-  }
-
-  .overlay.overlay-lg .shape.wave {
-    height: initial;
-    width: 63px;
-  }
-
-  .overlay.overlay-lg .shape.xshape {
-    height: 24px;
-  }
-
-  .overlay.overlay-sm .shape {
-    height: 24px;
-  }
-
-  .overlay.overlay-sm .shape.wave {
-    height: initial;
-    width: 39px;
-  }
-
-  .overlay.overlay-sm .shape.xshape {
-    height: 19px;
-  }
+  
 
   header .points1 {
     width: 270px;
@@ -1048,131 +1029,6 @@ nav.open .links {
     left: 65%;
   }
 
-  .record-circle {
-    width: 150px;
-    height: 150px;
-    border-width: 3px;
-  }
-
-  .record-circle .number {
-    font-size: 1.8rem;
-  }
-
-  .record-circle .sub-title {
-    font-size: 0.9rem;
-  }
-
-  .blog-wrap {
-    margin: 0.7rem 0.5rem;
-  }
-
-  .blog-card {
-    max-width: 315px;
-  }
-
-  .blog-image {
-    height: 200px;
-  }
-
-  .blog-content {
-    padding: 1.8rem 1.7rem 1.9rem 1.7rem;
-  }
-
-  .blog-info {
-    margin-bottom: 0.2rem;
-  }
-
-  .blog-info > * {
-    font-size: 0.75rem !important;
-  }
-
-  .blog-user i {
-    font-size: 0.8rem;
-  }
-
-  .blog-text {
-    font-size: 0.9rem;
-    margin: 0.2rem 0 0.8rem 0;
-  }
-
-  .rate {
-    font-size: 1.15rem;
-    margin-bottom: 1.1rem;
-  }
-
-  .review-text {
-    font-size: 1.05rem;
-  }
-
-  .review-info {
-    margin-top: 1.1rem;
-  }
-
-  .review-name {
-    font-size: 1.05rem;
-  }
-
-  .review-job {
-    font-size: 0.85rem;
-  }
-
-  .quote {
-    font-size: 6.5rem;
-  }
-
-  .review-nav {
-    font-size: 1.55rem;
-  }
-
-  .swiper-button-next {
-    right: 2.5rem;
-  }
-
-  .swiper-button-prev {
-    right: 4.5rem;
-  }
-
-  .contact {
-    padding: 9rem 0 6rem 0;
-  }
-
-  .contact-form {
-    padding-left: 1rem;
-  }
-
-  .contact-info {
-    padding-right: 1rem;
-  }
-
-  .contact-box {
-    padding: 3.6rem 3rem;
-  }
-
-  .information-wrap {
-    margin-top: 1.2rem;
-  }
-
-  .contact-icon {
-    min-width: 50px;
-    height: 50px;
-    font-size: 1rem;
-    margin-right: 0.8rem;
-  }
-
-  .contact-icon i {
-    line-height: 50px;
-  }
-
-  .info-text {
-    font-size: 1.05rem;
-  }
-
-  .contact-input {
-    font-size: 0.9rem;
-    padding: 0.9rem 1.6rem;
-    margin: 0.4rem 0;
-  }
-
   .hireme {
     padding: 8rem 0;
   }
@@ -1314,11 +1170,6 @@ nav.open .links {
     width: 50%;
   }
 
-  .gallery-image {
-    height: 210px;
-    max-width: 270px;
-  }
-
   .background-bg {
     height: 340px;
   }
@@ -1328,81 +1179,8 @@ nav.open .links {
     width: 100%;
   }
 
-  .about .column-1:before {
-    font-size: 5rem;
-  }
 
-  .about .points {
-    top: 60%;
-    left: 59%;
-  }
-
-  .records .wave1,
-  .records .triangle {
-    display: none;
-  }
-
-  .records .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .records .wave2 {
-    left: 48%;
-  }
-
-  .records .sqaure2 {
-    bottom: 45%;
-    right: 50px;
-  }
-
-  .testi-content {
-    margin-top: 1.7rem;
-  }
-
-  .testi-content .image {
-    max-width: 500px;
-    margin: 0 auto;
-  }
-
-  .review-nav {
-    bottom: 3rem;
-  }
-
-  .contact-box {
-    grid-template-columns: 1fr;
-    padding: 3.2rem 2.7rem;
-  }
-
-  .contact-info {
-    padding-right: 0;
-    padding-bottom: 0.5rem;
-  }
-
-  .contact-form {
-    padding-left: 0;
-    padding-top: 0.5rem;
-  }
-
-  .information-wrap {
-    margin-top: 0.7rem;
-  }
-
-  .information:not(:last-child) {
-    margin-bottom: 0.8rem;
-  }
-
-  .contact-input.textarea {
-    min-height: 220px;
-  }
-
-  .contact:before {
-    height: 25%;
-  }
-
-  .contact:after {
-    height: 75%;
-    top: 25%;
-  }
+  
 
   .footer .grid-4 {
     grid-template-columns: repeat(2, 1fr);
@@ -1476,94 +1254,7 @@ nav.open .links {
     font-size: 0.92rem;
   }
 
-  .overlay.overlay-lg .shape {
-    height: 28px;
-  }
 
-  .overlay.overlay-lg .shape.wave {
-    height: initial;
-    width: 52px;
-  }
-
-  .overlay.overlay-lg .shape.xshape {
-    height: 22px;
-  }
-
-  .records .container {
-    grid-template-columns: 1fr;
-  }
-
-  .records .half-circle {
-    top: 50%;
-    left: 50px;
-  }
-
-  .records .wave2 {
-    bottom: 50%;
-    right: 20px;
-    left: initial;
-  }
-
-  .records .xshape {
-    right: 70px;
-  }
-
-  .records .square2 {
-    bottom: 90px;
-    right: 40px;
-  }
-
-  .testi-content {
-    margin-top: 1rem;
-  }
-
-  .review {
-    padding: 1.5rem 1rem;
-  }
-
-  .review-text {
-    font-size: 0.9rem;
-  }
-
-  .review-nav {
-    bottom: 1.5rem;
-    font-size: 1.3rem;
-  }
-
-  .swiper-button-next {
-    right: 1.3rem;
-  }
-
-  .swiper-button-prev {
-    right: 3rem;
-  }
-
-  .contact {
-    padding: 8rem 0 5rem 0;
-  }
-
-  .contact-info {
-    display: none;
-  }
-
-  .contact-box {
-    padding: 2.3rem 2rem;
-    border-radius: 30px;
-  }
-
-  .contact:before {
-    background-size: 200%;
-  }
-
-  .contact-form .row {
-    grid-column-gap: 0.3rem;
-  }
-
-  .contact-input {
-    font-size: 0.8rem;
-    padding: 0.8rem 1.4rem;
-    margin: 0.25rem 0;
-  }
 }
 
 /* End Responsive */
