@@ -1,10 +1,11 @@
 
 .containerhobby{
     width: 100%;
-    height: 100vh;
+    height: 10vh;
     padding: 0 8%;
-    margin-bottom: 80px;
+    margin-bottom: 290px;
     box-sizing: border-box;
+    /* background-color:red; */
 }
 
 
@@ -15,13 +16,13 @@
 }
 .service{
     text-align: center;
-    padding:25px 10px;
+    padding:5px 5px;
     border-radius:5px;
     font-size:14px;
     cursor:pointer;
     background:transparent;
-    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset; */
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background:linear-gradient(30deg,yellow,red);
 }
 .service i{
     font-size: 90px;
@@ -35,18 +36,73 @@
 }
 .service:hover{
     /* background:#303ef7; */
-    color:rgb(228, 37, 37);
+    color:rgb(255, 255, 255);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1180px) {
 
     .rowhobby{
         
         padding: 10px;
     }
     .service i{
-        font-size: 30px;
+        font-size: 40px;
+        padding:15px 5px;
         margin-bottom:10px;
         color:rgb(8, 8, 8);
     }
+    .containerhobby{
+        width: 100%;
+        height: 20vh;
+        padding: 0 8%;
+        /* margin-bottom: 180px; */
+        box-sizing: border-box;
+    }
+    .service h2{
+        font-size:20px;
+    }
+    
+}
+@media (max-width: 900px) {
+
+    .rowhobby{
+        
+        padding: 10px;
+    }
+    .service{
+        width: 100%;
+    }
+    .service i{
+        font-size: 40px;
+        padding:15px 5px;
+        margin-bottom:10px;
+        color:rgb(8, 8, 8);
+        
+    }
+    .containerhobby{
+        width: 100%;
+        height: 60vh;
+        padding: 0 8%;
+        /* margin-bottom: 180px; */
+        box-sizing: border-box;
+    }
+    .service h2{
+        font-size:20px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+
+    .containerhobby{
+        margin-bottom: 0;
+    }
+    .service{
+        width: 80%;
+    }
+    .containerhobby{
+        height: 120vh;  
+    }
+    
+    
 }
