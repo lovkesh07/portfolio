@@ -1,0 +1,258 @@
+
+/* * Contact */ */
+
+#contact{
+    background: black;
+}
+.contact {
+  position: relative;
+  width: 100%;
+  padding: 13.5rem 0 8.5rem;
+}
+
+.contact:before,
+.contact:after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+  left: 0;
+}
+
+.contact:before {
+  top: 0;
+  height: 40%;
+}
+
+.contact:after {
+  top: 40%;
+  height: 60%;
+}
+
+.contact-box {
+  width: 100%;
+  /* background: linear-gradient(30deg,yellow,red); */
+  background: linear-gradient(30deg,yellow,rgb(20, 190, 14),rgba(146, 190, 255, 0.952));
+  width: 100%;
+  border-radius: 45px;
+  padding: 5.5rem 4.5rem;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-info {
+  padding-right: 2rem;
+}
+
+.contact-form {
+  padding-left: 2rem;
+}
+
+.contact-info .title:after {
+  left: 0;
+  transform: initial;
+}
+
+.information-wrap {
+  margin-top: 2rem;
+}
+
+.information {
+  display: flex;
+  align-items: center;
+}
+
+.information:not(:last-child) {
+  margin-bottom: 1.3rem;
+}
+
+.contact-icon {
+  min-width: 67px;
+  height: 67px;
+  display: inline-block;
+  border-radius: 50%;
+  background-color: black;
+  color: red;
+  text-align: center;
+  font-size: 1.4rem;
+  margin-right: 1rem;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-icon i {
+  line-height: 67px;
+}
+
+.info-text {
+  font-size: 1.3rem;
+  display: inline-block;
+}
+
+.contact-form .title:after {
+  display: none;
+}
+
+.contact-form .title {
+  margin: 0;
+}
+
+.contact-form .row {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  grid-column-gap: 0.6rem;
+}
+
+.contact-input {
+  padding: 1.2rem 2.1rem;
+  margin: 0.6rem 0;
+  border: none;
+  outline: none;
+  background: #f3f3f3;
+  border-radius: 4rem;
+  font-weight: 600;
+  font-size: 1.25rem;
+  transition: 0.3s;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.contact-input::placeholder {
+  font-weight: 400;
+  
+}
+
+.contact-input.textarea {
+  resize: none;
+  min-height: 280px;
+  border-radius: 2rem;
+}
+
+.contact-input:hover {
+  background: #ececec;
+}
+
+.contact-input:focus {
+  background: #eaeaea;
+}
+
+.contact-input .btn {
+  margin-top: 0.6rem;
+  
+}
+
+/* End Contact */
+
+
+@media (max-width: 1280px) {
+.contact {
+    padding: 9rem 0 6rem 0;
+  }
+
+  .contact-form {
+    padding-left: 1rem;
+  }
+
+  .contact-info {
+    padding-right: 1rem;
+  }
+
+  .contact-box {
+    padding: 3.6rem 3rem;
+  }
+
+  .information-wrap {
+    margin-top: 1.2rem;
+  }
+
+  .contact-icon {
+    min-width: 50px;
+    height: 50px;
+    font-size: 1rem;
+    margin-right: 0.8rem;
+  }
+
+  .contact-icon i {
+    line-height: 50px;
+  }
+
+  .info-text {
+    font-size: 1.05rem;
+  }
+
+  .contact-input {
+    font-size: 0.9rem;
+    padding: 0.9rem 1.6rem;
+    margin: 0.4rem 0;
+  }
+
+}
+
+
+@media (max-width: 1280px) {
+
+    .contact-box {
+        grid-template-columns: 1fr;
+        padding: 3.2rem 2.7rem;
+      }
+    
+      .contact-info {
+        padding-right: 0;
+        padding-bottom: 0.5rem;
+      }
+    
+      .contact-form {
+        padding-left: 0;
+        padding-top: 0.5rem;
+      }
+    
+      .information-wrap {
+        margin-top: 0.7rem;
+      }
+    
+      /* .information:not(:last-child) {
+        margin-bottom: 0.8rem;
+      } */
+    
+      .contact-input.textarea {
+        min-height: 220px;
+      }
+    
+      .contact:before {
+        height: 25%;
+      }
+    
+      .contact:after {
+        height: 75%;
+        top: 25%;
+      }
+
+}
+
+@media (max-width: 560px) {
+
+    
+    .contact {
+      padding: 8rem 0 5rem 0;
+    }
+    .contact-box {
+      padding: 2.3rem 2rem;
+      border-radius: 30px;
+    }
+  
+    .contact:before {
+      background-size: 200%;
+    }
+  
+    .contact-form .row {
+      grid-column-gap: 0.3rem;
+    }
+  
+    .contact-input {
+      font-size: 0.8rem;
+      padding: 0.8rem 1.4rem;
+      margin: 0.25rem 0;
+    }
+  
+  }
+  

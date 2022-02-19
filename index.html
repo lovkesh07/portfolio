@@ -7,6 +7,8 @@
   <title>Lovkesh Patel</title>
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
+  <link rel="shortcut icon" type="img/jpg" href="img/photo.jpg">
+
   <!-- <link rel="shortcut icon" type="favicon.png" href="img/favicon.png"> -->
   <script src="https://kit.fontawesome.com/a076d05399.js" ></script>
 
@@ -14,7 +16,12 @@
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/style.css" />
   <link rel="stylesheet" href="./css/preloader.css" />
-  <link rel="stylesheet" href="/css/hobby.css">
+  <link rel="stylesheet" href="./css/hobby.css">
+  <link rel="stylesheet" href="/css/contact.css">
+
+  <link rel="stylesheet" href="/css/social_media_sideba.css">
+
+
 
 </head>
 
@@ -23,6 +30,28 @@
   <div id="loader-wrapper">
     <div id="loader"></div>
   </div> -->
+
+
+  <nav>
+    <ul class="nav1">
+        <li><a href="https://www.facebook.com">
+            <i class="fab fa-facebook-f"><span>Facebook</span></i>
+        </a></li>
+
+        <li><a href="https://github.com/lovkesh07">
+            <i class="fab fa-github"><span>Github</span></i>
+        </a></li>
+
+        <li><a href="https://www.instagram.com/lov_kesh_11/">
+            <i class="fab fa-instagram"><span>Insatgram</span></i>
+        </a></li>
+        <li><a href="https://www.linkedin.com/in/lovkesh-patel-b4642b122?fromQR=1">
+            <i class="fab fa-linkedin-in"><span>Linkedin</span></i>
+        </a></li>
+        
+    </ul>
+</nav>
+
 
   <main>
     <header id="header">
@@ -45,6 +74,9 @@
               </li>
               <li>
                 <a href="#hobby">My Hobbies</a>
+              </li>
+              <li>
+                <a href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -178,7 +210,7 @@
 
 
     <section class="hireme" id="hobby">
-      <div class="container">
+      <div class="container" data-aos="fade-down" data-aos-duration="2000">
         <h3 class="titlehobb">Let's Talk About My Hobbies</h3>
         <p class="text">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio,
@@ -193,27 +225,27 @@
 
         <div class="rowhobby">
 
-            <div class="service">
+            <div class="service" data-aos="zoom-in-up"  data-aos-duration="3000">
                 <i class="far fa-futbol"></i>
                 <h2>football</h2>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in-down" data-aos-duration="3000">
                 <i class='fas fa-headphones'></i>
                 <h2>listening music</h2>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in-up" data-aos-duration="3000">
                 <i class='fas fa-drafting-compass'></i>
                 <h2>editing pictures</h2>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in-down" data-aos-duration="3000">
                 <i class='fas fa-baseball-ball'></i>
                 <h2>cricket</h2>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in-up" data-aos-duration="3000">
                 <i class='fas fa-bed'></i>
                 <h2>sleeping</h2>
             </div>
-            <div class="service">
+            <div class="service" data-aos="zoom-in-down" data-aos-duration="3000">
                 <i class='fas fa-camera'></i>
                 <h2>photography</h2>
             </div>
@@ -223,6 +255,82 @@
 
     
     </section>
+
+
+
+    <!-- contact-me start-->
+
+    <section class="contact" id="contact" >
+      <div class="container" data-aos="zoom-in-down" >
+        <div class="contact-box">
+          <div class="contact-info">
+            <h3 class="title"  data-aos="zoom-out" data-aos-duration="2000" >Get in touch</h3>
+            <p class="text" data-aos="fade-up" data-aos-duration="2000">
+              Lets get in touch with me
+            </p>
+            <div class="information-wrap">
+              <div class="information">
+                <div class="contact-icon" data-aos="zoom-in-left">
+                  <i class="fas fa-map-marker-alt"></i>
+                </div>
+                <p class="info-text" data-aos="zoom-in-right">new delhi</p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon" data-aos="zoom-in-right">
+                  <i class="fas fa-paper-plane"></i>
+                </div>
+                <p class="info-text" data-aos="zoom-in-left">lovkesh@gmail.com</p>
+              </div>
+
+              <div class="information">
+                <div class="contact-icon" data-aos="zoom-in-left">
+                  <i class="fas fa-phone-alt"></i>
+                </div>
+                <p class="info-text" data-aos="zoom-in-right">8130584501</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos="zoom-in-down">
+            <h3 class="title" data-aos="fade-up">Contact me</h3>
+            <div class="row">
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="First Name"
+                data-aos="zoom-in-down"
+              />
+              <input
+                type="text"
+                class="contact-input"
+                placeholder="Last Name"
+                data-aos="zoom-in-left"
+              />
+            </div>
+
+            <div class="row">
+              <input type="text" class="contact-input" placeholder="Phone"  data-aos="zoom-in-right"/>
+              <input type="email" class="contact-input" placeholder="Email"  data-aos="zoom-out-up" />
+            </div>
+
+            <div class="row">
+              <textarea
+                name="message"
+                class="contact-input textarea"
+                placeholder="Message"
+                data-aos="zoom-out-left"
+              ></textarea>
+            </div>
+            <a href="#" class="btn"  data-aos="fade-up">Send</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+ <!-- contact-me end -->
+
+
   <!-- </main> -->
 
 
@@ -233,8 +341,7 @@
         <div class="grid-4-col footer-about">
           <h3 class="title-sm">About</h3>
           <p class="text">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-            officiis quo officia quia?
+            “When you have a dream, you've got to grab it and never let go.”
           </p>
         </div>
 
@@ -258,9 +365,9 @@
 
         <div class="grid-4-col footer-newstletter">
           <h3 class="title-sm">Contact-Me</h3>
-          <p class="text">
+          <!-- <p class="text">
             Lorem ipsum dolor, sit amet ipsum dolor sit amet.
-          </p>
+          </p> -->
           <div class="footer-input-wrap">
             <input type="email" class="footer-input" placeholder="Email" />
             <a href="#" class="input-arrow">
@@ -283,16 +390,16 @@
             <h3>Follow me</h3>
             <span class="footer-line"></span>
             <div class="social-media">
-              <a href="#">
+              <a href="https://www.facebook.com">
                 <i class="fab fa-facebook-f"></i>
               </a>
-              <a href="#">
-                <i class="fab fa-twitter"></i>
+              <a href="https://github.com/lovkesh07">
+                <i class="fab fa-github"></i>
               </a>
-              <a href="#">
+              <a href="https://www.instagram.com/lov_kesh_11/">
                 <i class="fab fa-instagram"></i>
               </a>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/lovkesh-patel-b4642b122?fromQR=1">
                 <i class="fab fa-linkedin-in"></i>
               </a>
             </div>

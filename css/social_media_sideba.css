@@ -1,0 +1,74 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+} */
+body{
+    
+    background-color: #d1bdbdc7;
+}
+nav .nav1{
+    position: fixed;
+    width: 50px;
+    margin-top: 350px;
+    box-shadow: 2px 2px 8px 0 rgba(0,0,0,0.4);
+}
+nav .nav1 li{
+    height: 60px;
+    position: relative;
+}
+nav .nav1 li a{
+    color: #fff;
+    display: block;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    padding-left: 25% ;
+    border-bottom: 10px solid rgba(0,0,0,0.4);
+    transition: all .3s linear;
+}
+nav  .nav1 li:nth-child(1) a{
+    background: #4267B2;
+}
+nav .nav1 li:nth-child(2) a{
+    background: #407cf5;
+}
+nav .nav1 li:nth-child(3) a{
+    background: #ce2a76;
+}
+nav .nav1 li:nth-child(4) a{
+    background: #3047c7;
+}
+nav .nav1 li:nth-child(5) a{
+    background: #4a9fee;
+}
+
+
+nav .nav1 li a i{
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font-size: 25px;
+}
+nav .nav1 li a span{
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: none;
+}
+.nav1 a:hover{
+    z-index: 1;
+    border-radius:0 20px 20px 0;
+    width: 200px;
+    border-bottom: 4px solid rgba(34, 23, 23, 0.5);
+    box-shadow: 0 0 1px 1px rgba(3, 3, 3, 0.39);
+}
+ul li a:hover span{
+    display:block;
+    padding-left: 25%;
+    
+    
+}
