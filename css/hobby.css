@@ -3,7 +3,7 @@
     width: 100%;
     height: 10vh;
     padding: 0 8%;
-    margin-bottom: 290px;
+    margin-bottom: 130px;
     box-sizing: border-box;
     /* background-color:red; */
 }
@@ -64,7 +64,9 @@
     
 }
 @media (max-width: 900px) {
-
+    .containerhobby{
+        margin-bottom:200px;
+    }
     .rowhobby{
         
         padding: 10px;
@@ -91,6 +93,19 @@
     }
     
 }
+@media (max-width: 860px) {
+
+    .containerhobby{
+        margin-bottom: 30px;
+    }
+    .service{
+        width: 80%;
+    }
+    .containerhobby{
+        height: 120vh;  
+    }
+  
+}
 
 @media (max-width: 360px) {
 
@@ -103,6 +118,5 @@
     .containerhobby{
         height: 120vh;  
     }
-    
-    
+  
 }

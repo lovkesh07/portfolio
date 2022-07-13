@@ -133,3 +133,23 @@ window.addEventListener("load", function () {
     overlay.style.display = "none";
   }, 1000);
 });
+
+
+//contact submit button
+var btn = document.getElementById("btnn");
+btn.addEventListener("click", function(e){
+  e.preventDefault()
+  // console.log("hi");
+  Email.send({
+    Host : "smtp.yourisp.com",
+    Username : "lovkeshp429@gmail.com",
+    Password : "password",
+    To : 'them@website.com',
+    From : "you@isp.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+  message => alert(message)
+);
+})
+ 

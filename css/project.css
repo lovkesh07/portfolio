@@ -1,0 +1,232 @@
+body {
+    
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: rgb(56, 53, 53);
+    min-height: 100vh;
+}
+
+.pro {
+    position: relative;
+}
+
+.pro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 200vh;
+    background: linear-gradient(#f00, #f0f);
+    clip-path: circle(30% at right 70%);
+}
+
+.pro::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(68, 255, 0), rgb(238, 255, 0));
+    /* clip-path: circle(20% at 10% 10%); */
+    clip-path: circle(30% at left 50%);
+}
+
+
+.pro1 {
+    position: relative;
+}
+
+.pro1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 280vh;
+    /* background: linear-gradient(rgb(137, 202, 197), rgb(0, 68, 255)); */
+    background: linear-gradient(rgb(170, 0, 255),rgb(235, 164, 249));
+    clip-path: circle(20% at left 68%);
+    z-index:-1;
+}
+
+.pro1::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgb(255, 85, 0), rgb(238, 255, 0));
+    /* clip-path: circle(20% at 10% 10%); */
+    clip-path: circle(24% at right 20%);
+}
+
+
+.pro2 {
+    position: relative;
+}
+
+.pro2::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 460vh;
+    background: linear-gradient(rgb(255, 221, 0), rgb(0, 183, 255));
+    clip-path: circle(10% at right 68%);
+    z-index:-1;
+    display:none;
+}
+
+.pro2::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 120vh;
+    background: linear-gradient(rgb(63, 16, 248), rgb(255, 0, 0));
+    /* clip-path: circle(20% at 10% 10%); */
+    clip-path: circle(20% at center 58%);
+    z-index:-1;
+    /* display:none; */
+}
+
+
+
+.containerp {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 40px 0;
+    margin-top: 240px;
+}
+
+.containerp .card {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    background: rgba(237, 217, 217, 0.068);
+    margin: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px);
+}
+
+.containerp .card .content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0.75;
+    transition: 0.5s;
+}
+
+.containerp .card:hover .content {
+    opacity: 1;
+    transform: translateY(-20px);
+}
+
+.containerp .card .content .imgbx {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid rgba(0, 0, 0, 0.25)
+}
+.containerp .card .content .imgbx:hover{
+    border-radius: 0;
+    transition: 0.5s;
+    transition-delay: calc(0.1s);
+}
+.containerp .card .content .imgbx img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.containerp .card .content .contentbx .proh h3 {
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0 10px;
+    line-height: 1.1em;
+}
+
+.containerp .card .content .contentbx .proh h3 span {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: initial;
+}
+.containerp .card .sci{
+    position: absolute;
+    bottom: 40px;
+    display:flex;
+}
+.containerp .card .sci li {
+    list-style: none;
+    margin: 0 10px;
+    transform: translateY(40px);
+    transition: 0.5s;
+    transition-delay: calc(0.1s * var(--i));
+    opacity: 0;
+    /* display: none; */
+}
+
+.containerp .card:hover .sci li {
+    transform: translateY(0px);
+    opacity: 1;
+    
+}
+
+.containerp .card .sci li a {
+    color: #fff;
+    font-size: 34px;
+}
+
+
+
+@media (max-width: 1230px) {
+    .containerp{
+        margin-top:120px;
+    }
+    
+    
+}
+@media (max-width: 880px) {
+
+    .containerp{
+        margin-top:320px;
+        /* background-color: #fff; */
+    }
+    
+    
+}
+
+@media (max-width: 360px) {
+
+    .containerp{
+        margin-top:20px;
+    }
+    
+    
+    
+}

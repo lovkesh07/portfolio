@@ -617,6 +617,7 @@ nav.open .links {
 
 .hireme {
   padding: 12rem 0;
+  
 }
 
 .hireme .container {
@@ -1134,7 +1135,7 @@ nav.open .links {
 
   .links {
     position: fixed;
-    width: 60%;
+    width: 70%;
     height: 100vh;
     top: 0;
     right: 0;
